@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SPACE ECHO - Archaeological Museum of Space Discoveries</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif; }
+body { background:#0a0a0a; color:white; }
+nav { display:flex; justify-content:space-between; align-items:center; padding:20px 30px; background:#111; border-bottom:2px solid #d4af37; position:sticky; top:0; }
+nav h1 { color:#d4af37; font-size:22px; letter-spacing:2px; }
+nav a { color:white; text-decoration:none; margin-left:20px; font-size:14px; }
+nav a:hover { color:#d4af37; }
+.hero { text-align:center; padding:80px 20px; background: linear-gradient(180deg, #111, #0a0a0a); }
+.hero h2 { font-size:38px; color:#d4af37; margin-bottom:15px; }
+.hero p { color:#ccc; max-width:600px; margin:0 auto 25px; line-height:1.6; }
+.btn { background:#d4af37; color:black; padding:12px 25px; border:none; border-radius:25px; font-weight:bold; font-size:16px; cursor:pointer; }
+.section { padding:40px 20px; max-width:1000px; margin:0 auto; }
+.section h2 { text-align:center; color:#d4af37; margin-bottom:30px; font-size:28px; }
+.cards { display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:20px; }
+.card { background:#1a1a1a; border:1px solid #333; border-radius:15px; padding:25px; text-align:center; }
+.card:hover { border-color:#d4af37; }
+.card h3 { color:#d4af37; margin-bottom:10px; font-size:22px; }
+.card p { color:#bbb; line-height:1.5; font-size:14px; }
+.map-box { background:#1a1a1a; border:1px dashed #d4af37; border-radius:15px; padding:40px 20px; text-align:center; }
+.map-box p { color:#ccc; margin-top:10px; }
+footer { text-align:center; padding:30px; color:#777; border-top:1px solid #222; margin-top:40px; font-size:13px; }
+</style>
+</head>
+<body>
+
+<nav>
+<h1>SPACE ECHO</h1>
+<div>
+<a href="index.html">Home</a>
+<a href="map.html">Map</a>
+<a href="artifacts.html">Artifacts</a>
+</div>
+</nav>
+
+<div class="hero">
+<h2>Archaeological Museum<br>of Space Discoveries</h2>
+<p>Explore the artifacts left behind by humanity's greatest journey. From Apollo 11 to Perseverance, every object tells a story from another world.</p>
+<button class="btn" onclick="document.getElementById('explore').scrollIntoView({behavior:'smooth'})">Start Exploring</button>
+</div>
+
+<div class="section" id="explore">
+<h2>Featured Artifacts</h2>
+<div class="cards">
+<div class="card"><h3>🌕 Apollo 11</h3><p>1969 - First footprint on the Moon. The mission that changed history forever.</p></div>
+<div class="card"><h3>🔴 Curiosity Rover</h3><p>2012 - Landed on Mars to search for signs of ancient life.</p></div>
+<div class="card"><h3>🛰️ Voyager 1</h3><p>1977 - The farthest human-made object, now in interstellar space.</p></div>
+</div>
+</div>
+
+<div class="section">
+<h2>Missions Timeline</h2>
+<div class="cards">
+<div class="card"><h3>1969</h3><p>Apollo 11 lands on Moon</p></div>
+<div class="card"><h3>2012</h3><p>Curiosity lands on Mars</p></div>
+<div class="card"><h3>2021</h3><p>Perseverance lands on Mars</p></div>
+</div>
+</div>
+
+<div class="section">
+<h2>Interactive Map</h2>
+<div class="map-box">
+<h3>🗺️ Explore The Museum Map</h3>
+<p>Discover where each artifact was found - Moon, Mars and Beyond.</p><br>
+<a href="map.html"><button class="btn">Open Map</button></a>
+</div>
+</div>
+
+<footer>
+SPACE ECHO © 2026 - Made with ❤️ by Team SPACE ECHO<br>
+Hackathon - Friday & Saturday
+</footer>
+
+</body>
+</html>
